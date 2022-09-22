@@ -10,7 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assignment 12</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <!--  own stylesheet  -->
+    <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
@@ -25,9 +26,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 style="text-align:left">Latest Mars news</h3>
-          <h4 style="text-align:left">{{ mars.mars_news_title }}</h4>
-          <p style="text-align:left">{{ mars.mars_news_text }}</p>
+          <h3 id="left">Latest Mars news</h3>
+          <h4 id="left">{{ mars.mars_news_title }}</h4>
+          <p od="left">{{ mars.mars_news_text }}</p>
         </div>
       </div>
     </div>
@@ -47,15 +48,17 @@
     </div>
     
     <!-- create container for the four Mars hemisphere photos -->
-    <div class="images-container" style="display:flex" style="justify-content:center">
-      <div class="row">
-        {% for item in mars.mars_hemispheres %}
-          <div class=col-md-3>
-            <h3>{{ item.title }}</h3>
-            <img src="{{ item.img_url }}" alt="{ item.title }}" style="width: 200px" style="height: 200px" >
-          </div>
-        {% endfor %}          
-      </div>
+    <div class="image-container">
+      {% for item in mars.mars_hemispheres %}
+        <h3>{{ item.title }}</h3>
+                 
+      {% endfor %}   
+    </div>
+    <div class="image-container">
+      {% for item in mars.mars_hemispheres %}
+        
+        <img src="{{ item.img_url }}" alt="{ item.title }}">          
+      {% endfor %}   
     </div>
 </body>
 
