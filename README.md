@@ -1,6 +1,6 @@
-# web-scraping-challenge
 
-This repo contains contents for Homework 12 assignment - Web Scraping Challenge.
+This repo contains contents for scraping from multiple web pages that have information on planet Mars. The info scraped is used to populate a simple dashboard/webpage.
+
 ***
 The repo has the following contents:
 1. app.py - This file runs the flask that connects to the index.html with render_template and the scrape_mars.py
