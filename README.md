@@ -1,5 +1,7 @@
 
-This repo contains contents for scraping from multiple web pages that have information on planet Mars. The info scraped is used to populate a simple dashboard/webpage.
+Summary/Problem: This repo contains contents for scraping from multiple web pages that have information on planet Mars. The info scraped is used to populate a simple dashboard/webpage. We are trying to combine data from three websites that all provide different informaiton on the planet mars. The goal is to provide a webpage that acts as a visualization dashboard for the user. The user simply clicks the web scraping button as seen in the image below and the webpage populates after scraing multliple pages. MongoDB is utilized through app.py to create a database and enter data into the database.
+
+![image1](images/screenshot.png)
 
 ***
 The repo has the following contents:
