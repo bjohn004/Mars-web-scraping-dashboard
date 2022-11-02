@@ -12,4 +12,4 @@ The repo has the following contents:
     1. index.html - contains html code to display flask
 5. Static Folder/ CSS Folder
     1. style.css - contains styling for index.html
-6. index_html_screenshot - screenshot of webpage created after scraping data
+
